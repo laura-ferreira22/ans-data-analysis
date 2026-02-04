@@ -84,7 +84,7 @@ data/processed/consolidado_despesas.csv
 
 ---
 
-# 🔍 TESTE 2 — Validação e Enriquecimento
+# TESTE 2 — Validação e Enriquecimento
 
 As demonstrações contábeis **não contêm CNPJ ou Razão Social**, apenas o identificador da operadora (`REG_ANS`).
 O enriquecimento foi feito via join com o cadastro **CADOP**:
