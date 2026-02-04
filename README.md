@@ -244,6 +244,8 @@ http://localhost:5173
 Backend e frontend devem rodar simultaneamente.
 
 ---
+## Autoria
+Projeto desenvolvido por Laura Ferreira Estudante de Ciência da Computação (UFBA)
 
 #  Limitações Conhecidas
 
