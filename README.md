@@ -60,7 +60,7 @@ Os arquivos de demonstrações contábeis foram disponibilizados diretamente em 
 * O **ano e trimestre foram extraídos do nome do arquivo**
 * O processamento foi feito **arquivo por arquivo** (abordagem streaming), reduzindo consumo de memória
 
-### 🔍 Identificação de Despesas
+### Identificação de Despesas
 
 As demonstrações contêm diversas contas. Para isolar despesas assistenciais, foi aplicado um **filtro semântico no campo `DESCRICAO`**, mantendo apenas registros com termos como:
 
@@ -70,13 +70,13 @@ As demonstrações contêm diversas contas. Para isolar despesas assistenciais, 
 
 Essa abordagem prioriza clareza analítica e alinhamento com o objetivo do teste.
 
-### ⚠️ Inconsistências Tratadas
+### Inconsistências Tratadas
 
 * **CNPJ duplicado com nomes diferentes** → padronizado usando o nome mais frequente
 * **Valores não positivos** → mantidos e marcados como suspeitos
 * **Trimestres inconsistentes** → padronizados para o formato `Q1–Q4`
 
-### 📄 Saída
+### Saída
 
 ```
 data/processed/consolidado_despesas.csv
@@ -93,13 +93,13 @@ O enriquecimento foi feito via join com o cadastro **CADOP**:
 REG_ANS ↔ REGISTRO_OPERADORA
 ```
 
-### 📌 Validações aplicadas
+### Validações aplicadas
 
 * CNPJ válido
 * Razão Social não vazia
 * Valor convertido para número
 
-### 📊 Agregações
+### Agregações
 
 Foi gerado um dataset agregado por **Razão Social + UF**, com:
 
